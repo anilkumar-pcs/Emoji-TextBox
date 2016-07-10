@@ -124,7 +124,7 @@ $(document).ready(function(){
 	elem.keyup(function(e){
 		
 		//if ENTER is pressed
-		if(e.keyCode == 13 && $("#msg-box").text().trim() != ""){
+		if(e.keyCode == 13 && (( $("#msg-box").text().trim() != "") || $("#msg-box").find("img").length>0)){
 
 			var str = $("#msg-box").html();
 			
